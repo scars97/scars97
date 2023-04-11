@@ -1,10 +1,10 @@
 ## SH GitHub
 
-<hr>
+![qktjd97@gmail.com GitHub stats](https://github-readme-stats.vercel.app/api?username=scars97&show_icons=true&theme=transparent)
 
+#
 
-### Skills
-<img src ="https://img.shields.io/badge/-Java-brown"><img src ="https://img.shields.io/badge/-Spring Framework-green"><img src ="https://img.shields.io/badge/-Spring Boot-lightgreen">
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=scars97&layout=compact&theme=transparent)](https://github.com/anuraghazra/github-readme-stats)
 
 
 <!--

@@ -1,6 +1,11 @@
-### SH GitHub
+## SH GitHub
 
 <hr>
+
+
+### Skills
+<img src ="https://img.shields.io/badge/-Java-brown"><img src ="https://img.shields.io/badge/-Spring Framework-green"><img src ="https://img.shields.io/badge/-Spring Boot-lightgreen">
+
 
 <!--
 **scars97/scars97** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

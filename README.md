@@ -1,4 +1,6 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=SH Github&fontSize=90" />
+### SH GitHub
+
+<hr>
 
 <!--
 **scars97/scars97** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

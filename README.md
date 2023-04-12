@@ -1,23 +1,25 @@
-## SH GitHub
+# 박성현 SH
 
-![qktjd97@gmail.com GitHub stats](https://github-readme-stats.vercel.app/api?username=scars97&show_icons=true&theme=transparent)
+### Education.
+<ul>
+  <li>이젠 아카데미 - 자바 웹개발 프로그래밍( 2022.09.29 - 2023.03.24 )
+    <ul>
+      <li>성적 우수상</li>
+    </ul>
+  </li>
+</ul>
+
+### Study.
+<ul>
+  <li>~ing
+    <ul>
+      <li><a href="https://recod-memory.tistory.com/">Blog</a></li>
+    </ul>
+  </li>
+</ul>
 
 #
 
+![qktjd97@gmail.com GitHub stats](https://github-readme-stats.vercel.app/api?username=scars97&show_icons=true&theme=transparent) 
+
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=scars97&layout=compact&theme=transparent)](https://github.com/anuraghazra/github-readme-stats)
-
-
-<!--
-**scars97/scars97** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->

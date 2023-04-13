@@ -1,6 +1,6 @@
 # 박성현 SH
 
-### Education.
+### 📓Education.
 <ul>
   <li>자바 웹개발 프로그래밍 과정( 2022.09.29 - 2023.03.24 )
     <ul>
@@ -9,7 +9,7 @@
   </li>
 </ul>
 
-### Study.
+### ✏️Study.
 <ul>
   <li>~ing
     <ul>

@@ -16,11 +16,7 @@
 
 ### ✏️Study.
 <ul>
-  <li>~ing
-    <ul>
-      <li><a href="https://recod-memory.tistory.com/">Blog</a></li>
-    </ul>
-  </li>
+  <li>~ing</li>
 </ul>
 
 <br>

@@ -3,7 +3,6 @@ name: Generate Metrics
 on:
   schedule: [{cron: "57 21 * * *"}]
   workflow_dispatch:
-  push: {branches: ["main"]}
 
 # 워크플로우가 작동하는 환경을 정의합니다.
 jobs:
@@ -22,8 +21,8 @@ jobs:
           filename: metrics.plugin.isocalendar.svg
 
       # 생성된 SVG 파일을 푸시
-      #- name: Commit and Push changes without Contributions
-      #  uses: stefanzweifel/git-auto-commit-action@v4
-      #  with:
-      #    commit_message: "Update metrics [skip ci] [no-contribution]"  # [skip ci]를 추가
-      #    branch: main
+      - name: Commit and Push changes without Contributions
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update metrics [skip ci] [no-contribution]"  # [skip ci]를 추가
+          branch: main

@@ -1,7 +1,7 @@
 name: Generate Metrics
 
 on:
-  schedule: [{cron: "54 21 * * *"}]
+  schedule: [{cron: "57 21 * * *"}]
   workflow_dispatch:
   push: {branches: ["main"]}
 

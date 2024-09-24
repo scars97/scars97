@@ -4,7 +4,7 @@ name: Generate Metrics
 on:
   # 매일 오전 1시에 자동으로 실행되게 설정합니다.
   schedule:
-    - cron: "0 1 * * *"
+    - cron: "25 21 * * *"
   # 워크플로우를 수동으로 트리거할 수 있게 설정합니다.
   workflow_dispatch:
 

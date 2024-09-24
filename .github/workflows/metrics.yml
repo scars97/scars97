@@ -2,23 +2,36 @@ name: Generate Metrics
 
 on:
   schedule: 
-    - cron: "10 22 * * *"
+    - cron: "21 22 * * *"
   workflow_dispatch:
+  push: {branches: ["main"]}
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    environment: 
+      name: production
+    permissions:
+      contents: write
     steps:
-      - name: Half-year calendar
-        uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
+          template: classic
           base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Seoul
+          plugin_habits: yes
+          plugin_habits_facts: no
+          plugin_habits_charts: yes
           plugin_isocalendar: yes
-
-      # 생성된 SVG 파일을 푸시
-      #- name: Commit and Push changes without Contributions
-      #  uses: stefanzweifel/git-auto-commit-action@v4
-      #  with:
-      #    commit_message: "Update metrics [skip ci] [no-contribution]"  # [skip ci]를 추가
-      #    branch: main
+          plugin_notable: yes
+          plugin_notable_filter: stars:>50
+          plugin_notable_from: all
+          plugin_notable_repositories: yes
+          plugin_notable_types: commit, pull_request
+          plugin_languages: yes
+          plugin_languages_ignored: >-
+            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
+            gnuplot
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 4

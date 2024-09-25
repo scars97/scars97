@@ -17,7 +17,7 @@ jobs:
         with:
           user: scars97
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: isocalendar.svg
+          filename: half-isocalendar.svg
           output_action: commit
           committer_branch: main
           committer_message: Update ${filename} - [GitHub Action]

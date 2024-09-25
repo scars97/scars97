@@ -27,6 +27,6 @@ jobs:
 
           # Output info
           base: ""
-
+          delay: 120
           plugin_isocalendar: yes
           plugins_errors_fatal: yes

@@ -18,20 +18,10 @@ jobs:
           user: scars97
           token: ${{ secrets.METRICS_TOKEN }}
           filename: isocalendar.svg
-          output_action: none
+          output_action: commit
+          commit_message: "Update isometric calendar"
+          branch: main
+
           base: ""
-          config_timezone: Asia/Seoul
-
-          # 플러그인 설정
           plugin_isocalendar: yes
-
-          plugin_habits: yes
-          plugin_habits_facts: no
-          plugin_habits_charts: yes
-
-          plugin_notable: yes
-          plugin_notable_from: all
-          plugin_notable_repositories: yes
-          plugin_notable_types: commit
-          
           plugins_errors_fatal: yes

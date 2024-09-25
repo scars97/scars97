@@ -16,17 +16,15 @@ jobs:
           # Common config
           user: scars97
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_branch: main
-          committer_message: Update ${filename} - [GitHub Action]
-          config_timezone: Etc/UTC
-
-          # Output file
-          template: classic
           filename: isocalendar.svg
-          config_output: svg
-
-          # Output info
-          base: ""
+          output_action: none
           delay: 120
+          base: ""
           plugin_isocalendar: yes
           plugins_errors_fatal: yes
+
+      - name: Upload SVG as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: isocalendar
+          path: isocalendar.svg

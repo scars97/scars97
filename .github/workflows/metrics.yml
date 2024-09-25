@@ -17,11 +17,16 @@ jobs:
         with:
           user: scars97
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: half-isocalendar.svg
+          filename: isocalendar.svg
           output_action: none
-          # commit_message: "Update isometric calendar"
-          # branch: main  # main 브랜치에 커밋
-          
           base: ""
           plugin_isocalendar: yes
           plugins_errors_fatal: yes
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add half-isocalendar.svg
+          git commit -m "Update isometric calendar" --author="github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          git push

@@ -19,8 +19,8 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: isocalendar.svg
           output_action: commit
-          commit_message: "Update isometric calendar"
-          branch: main
+          committer_branch: main
+          committer_message: Update ${filename} - [GitHub Action]
 
           base: ""
           plugin_isocalendar: yes

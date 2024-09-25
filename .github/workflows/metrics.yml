@@ -1,29 +1,23 @@
 name: Generate Metrics
 
 on:
-  schedule: [{cron: "0 10 * * *"}]
+  schedule: 
+    - cron: "0 0 * * *"
   workflow_dispatch:
-  push: {branches: ["main"]}
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: 📅 Isometric commit calendar - Half-year calendar
+        uses: lowlighter/metrics@master
         with:
-          # Common config
-          user: scars97
-          token: ${{ secrets.METRICS_TOKEN }}
-
-          # Output file
-          template: classic
           filename: isocalendar.svg
-          config_output: svg
-
-          # Output info
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          base_indepth: true
-
-          plugin_isocalendar: true
-          plugin_isocalendar_duration: half-year
+          plugin_isocalendar: yes
+          output_action: none
+          delay: 120
+          user: lowlighter
+          plugins_errors_fatal: yes

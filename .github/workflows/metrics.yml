@@ -13,9 +13,20 @@ jobs:
       - name: 📅 Isometric commit calendar - Half-year calendar
         uses: lowlighter/metrics@master
         with:
-          user: lowlighter
+          # Common config
+          user: scars97
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_branch: main
+          committer_message: Update ${filename} - [GitHub Action]
+          config_timezone: Etc/UTC
+
+          # Output file
+          template: classic
           filename: isocalendar.svg
+          config_output: svg
+
+          # Output info
           base: ""
+
           plugin_isocalendar: yes
           plugins_errors_fatal: yes

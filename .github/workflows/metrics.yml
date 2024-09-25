@@ -20,13 +20,13 @@ jobs:
           filename: isocalendar.svg
           output_action: none
           base: ""
-          plugin_isocalendar: yes
-          plugins_errors_fatal: yes
 
-      - name: Commit changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add half-isocalendar.svg
-          git commit -m "Update isometric calendar" --author="github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
-          git push
+          # 플러그인 설정
+          plugin_isocalendar: yes
+
+          plugin_notable: yes
+          plugin_notable_from: all
+          plugin_notable_repositories: yes
+          plugin_notable_types: commit
+          
+          plugins_errors_fatal: yes

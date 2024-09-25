@@ -13,7 +13,7 @@ jobs:
       - name: 📅 Isometric commit calendar - Half-year calendar
         uses: lowlighter/metrics@master
         with:
-          user: scars97
+          user: lowlighter
           token: ${{ secrets.METRICS_TOKEN }}
           filename: isocalendar.svg
           base: ""

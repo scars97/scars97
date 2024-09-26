@@ -12,7 +12,7 @@
 
 <br>
 
-<img align="left" src="/isocalendar.svg"/>
+<img align="left" src="/half-isocalendar.svg"/>
 
 <a href="https://github.com/scars97/github-readme-stats">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=scars97&layout=compact&theme=transparent" />

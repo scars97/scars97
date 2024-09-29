@@ -12,16 +12,17 @@ jobs:
       contents: write
 
     steps:
-      - name: 📅 Isometric commit calendar - Half-year calendar
+      - name: 📅 Isometric commit calendar - Full-year calendar
         uses: lowlighter/metrics@master
         with:
           user: scars97
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: half-isocalendar.svg
+          filename: isocalendar.svg
           output_action: commit
           committer_branch: main
           committer_message: Update ${filename} - [GitHub Action]
 
           base: ""
           plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
           plugins_errors_fatal: yes

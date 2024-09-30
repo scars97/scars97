@@ -12,7 +12,7 @@ jobs:
       contents: write
 
     steps:
-      - name: 📅 Isometric commit calendar - Full-year calendar
+      - name: 📅 Isometric commit calendar
         uses: lowlighter/metrics@master
         with:
           user: scars97
@@ -24,5 +24,4 @@ jobs:
 
           base: ""
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
           plugins_errors_fatal: yes

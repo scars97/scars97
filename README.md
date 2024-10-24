@@ -1,14 +1,4 @@
-# 박성현 SH
-
-### 🚩career.
-<ul>
-  <li>(2023.06.19 ~ ) </li>
-</ul>
-
-### ✏️Study.
-<ul>
-  <li>~ing</li>
-</ul>
+# 박성현 Junior Backend Developer
 
 
 <img src="isocalendar.svg"></img>

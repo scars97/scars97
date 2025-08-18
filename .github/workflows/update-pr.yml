@@ -18,7 +18,7 @@ jobs:
         id: prlist
         run: |
           curl -s "https://api.github.com/search/issues?q=author:scars97+type:pr&sort=created&order=desc&per_page=3" \
-          | jq '.items[] | "- [" + (.repository_url | split("/")[0]) + "] " + .title + " (" + .html_url + ")"] | join("\n")' \
+          | jq '.items[] | "\- [\(.repository_url | split("/")[-1])] [\(.title)](\(.html_url))\"' \
           > pr_list.md
 
       - name: Update README.md with PR list

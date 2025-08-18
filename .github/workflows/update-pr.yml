@@ -20,7 +20,11 @@ jobs:
 
       - name: Update README.md with PR list
         run: |
-          sed -i '/<!-- PR-START -->/,/<!-- PR-END -->/c\<!-- PR-START -->\n'"$(cat pr_list.md)"'\n<!-- PR-END -->' README.md
+          awk '
+            /<!-- PR-START -->/ {print; system("cat pr_list.md"); skip=1; next}
+            /<!-- PR-END -->/ {skip=0}
+            !skip
+          ' README.md > README.tmp && mv README.tmp README.md
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9

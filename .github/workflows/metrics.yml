@@ -20,7 +20,7 @@ jobs:
           filename: isocalendar.svg
           output_action: commit
           committer_branch: main
-          committer_message: Update ${filename} - [GitHub Action]
+          committer_message: Update ${filename}
 
           base: ""
           plugin_isocalendar: yes

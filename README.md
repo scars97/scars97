@@ -9,7 +9,7 @@
 
 ## ✨ 최근 Pull Requests
 <!-- PR-START -->
-- [strank] [feature: 파워존/심박수 기능 추가](https://github.com/STRANK-io/strank/pull/4)
-- [strank] [Update README.md](https://github.com/STRANK-io/strank/pull/3)
 - [cinema] [클라이언트 응답에 처리율 제한 정보 추가](https://github.com/scars97/cinema/pull/2)
+- [e-commerce] [[refactor] 주문 금액 계산 추상화](https://github.com/scars97/e-commerce/pull/10)
+- [e-commerce] [[refactor] 인기 상품 조회 방식 변경](https://github.com/scars97/e-commerce/pull/9)
 <!-- PR-END -->
